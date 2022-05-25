@@ -1,0 +1,49 @@
+*{
+    margin: 0; /* Reset the Inside Whitespace */
+    padding: 0; /* Reset the Outside Whitespace */
+}
+
+.container{
+    /*vh : viewpoint height / ansicht fensterhöhe*/
+    height: 100vh; /*(px , % = static), vh, vw, fr , em , rem*/
+    background-color: #F7E2E2;
+    display:grid ;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.contItem.headBar{
+    grid-column: 1 / span 16;
+    grid-row: 1 / span 1;
+    background-color: cornsilk;
+}
+
+.contItem.navBar {
+    grid-column: 3 / span 12;
+    grid-row: 2 / span 1;
+    background-color: cornsilk;
+}
+
+.contItem.sideMu {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 14;
+    background-color: cornsilk;
+}
+
+.contItem.ads {
+    grid-column: 15 / span 2;
+    grid-row: 2 / span 14;
+    background-color: cornsilk;
+}
+
+.contItem.main{
+    grid-column: 3 / span 12;
+    grid-row: 3 / span 13;
+    background-color: cornsilk;
+
+
+.contItem.footer {
+    grid-column: 1 / span 16;
+    grid-row: 16 / span 1;
+    background-color: cornsilk;
+}
